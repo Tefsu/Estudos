@@ -1,0 +1,11 @@
+#caixa {
+    width: 300px;
+    height: 300px;
+    /*background: #b9c941 url(../imagens/camera.png);*/
+    /*background: linear-gradient(to top right ,rgb(114, 14, 76), rgb(22, 46, 110), rgb(119, 248, 199));*/
+    background: radial-gradient(red, green, blue);
+}
+
+#caixa h1 {
+    background: rgba(131, 223, 78, 1);
+}

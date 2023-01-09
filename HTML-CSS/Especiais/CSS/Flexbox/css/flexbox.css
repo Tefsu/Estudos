@@ -1,0 +1,73 @@
+/*Flexbox container*/
+
+#conteudo {
+    background: #dcdcdc;
+    height: 400px;
+    display: flex;
+    
+    /* flex-direction row (esquerda para direita) | row-reverse (direita para esquerda) | column (cima para baixo) | column-reverse (baixo para cima)*/
+    /* flex-direction: row; */
+
+    /* nowrap (sem quebra de linha) | wrap () | wrap-reverse*/
+    /* flex-wrap: wrap; */
+
+    /* flex-start | flex-end | center | space-between | space-around */
+    justify-content: space-around;
+
+    /* stretech | center | flex-start | flex-end | baseline */
+    align-items: center;
+}
+
+
+/* Items parte 1 */
+
+.item {
+    /* width: 200px; */
+    height: 100px;
+    background: #fff;
+    border: 1px solid gray;
+    margin: 10px;
+    /* Define a proporção de espaço ocupada por um item */
+    flex-grow: 0;
+
+    /* Define a pcapacidade de reduçã de tamanho do item */
+    flex-shrink: 1;
+
+    /* Define o tmanho incial do item antes da distribuição do espaço restante */
+    flex-basis: 100px;
+}
+
+/*
+.ordem1 {
+    order: 1;
+}
+
+.ordem2 {
+    order: 2;
+}
+
+.ordem3 {
+    order: 3;
+}
+
+.ordem4 {
+    order: 4;
+} */
+
+/* O valor padrão da order é 0 */
+
+/* Aumenta proporcionalmente os itens ate preencher o display */
+.item1 {
+    /* flex-grow: 1; */
+    /* flex-shrink: 1; */
+}
+
+.item2 {
+    /* flex-grow: 2; */
+    /* flex-shrink: 3; */
+}
+
+
+.item3 {
+    /* flex-shrink: 6; */
+}
