@@ -1,0 +1,39 @@
+/***************HERANÇA E ESPECIFICIDADE ****************/
+
+/*body {
+    color: red;
+    border: 1px solid blue;
+}*/
+
+/* Quando uma formatação é aplicada, ela é herdada por outros elementos. border e background não são herdados*/
+
+/* ESPECIFICIDADE */
+p {
+    color: green;
+}
+
+p {
+    color: red;
+} 
+
+/* Ao usar seletores iguais, o ultimo vai ser o utilizado, a não ser que use o "!important" */
+
+/* Se um seletor for mais especifico que outro a regra mais especifica será a aplicada (terá tendencia sobre regras gerais) */
+
+* {
+    color: red;
+}
+
+h2 { /*3*/
+    color: blue;
+}
+
+h2.verde{ /*2*/
+    color: green;
+}
+
+h2#amarelo { /*1*/
+    color: yellow;
+}
+
+/*ordem de especificidade (ID > CLASS > TAG > *)   */

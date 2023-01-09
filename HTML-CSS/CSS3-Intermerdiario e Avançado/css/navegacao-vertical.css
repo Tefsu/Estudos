@@ -1,0 +1,38 @@
+/***********BARRA DE NAVEGAÇÂO VERTICAÇ **************/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+
+/*li {  exemplo
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}*/
+
+/** inicio barra de navegação vertical ***/
+
+ul a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../imagens/menu.png) no-repeat;
+}
+
+a:hover{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}
+
+#home #navegacao .home a, #sobre #navegacao .sobre a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: white;
+}

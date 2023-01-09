@@ -1,0 +1,36 @@
+/*******************ARREDONDAMENTO COM IMAGENS*******************/
+
+.caixa {
+    width: 400px;
+    background: #dedede url(../imagens/topo.png) no-repeat left top;
+}
+
+.caixa h2 {
+    padding:  10px 20px 0 20px;
+    
+}
+
+.caixa p {
+    background: url(../imagens/baixo.png) no-repeat left bottom;
+    padding:  0px 20px 20px 20px;
+}
+
+.caixa2 {
+    width: 400px;
+    background: #dedede url(../imagens/fundo-arredondamento.png) repeat-y left top;
+}
+
+.caixa2 h2 {
+    background: url(../imagens/topo2.png) no-repeat left top;
+    padding:  10px 20px 0 20px;
+    
+}
+
+.caixa2 p {
+    padding: 0 20px;
+}
+.caixa2 .ultimo {
+    background: url(../imagens/baixo2.png) no-repeat left bottom;
+    width: 400px;
+    height: 24px;
+}

@@ -1,0 +1,59 @@
+/******************SELETORES CSS ******************/
+
+/* SELETOR UNIVERSAL... seleciona todos os itens da pagina */
+/**{
+    border: 1px solid red;
+}*/
+
+/* SELETORES DE TEXTO... seleciona os itens pela tag*/
+/*h1{
+    color: green;
+}*/
+
+/* SELETOR DE CLASSE... seleciona os itens pela classe */
+
+/* Atribui o valor verde a qualquer elemento com a classe 'verde' */
+/*.verde {
+    color: green;
+}*/
+
+/* Atribui o valor verde apenas aos paragrafos com a classe 'verde' */
+/*p.verde{
+    color: green;
+}*/
+
+/*SELETOR DE ID... seleciona o elemento cujo atributo id tem valor especificado apos o simbolo de cerquilha ou jogo da velha*/
+
+/*#cabecalho {
+    border: 1px solid red;
+}*/
+
+/* SELETOR DE FILHO... seleciona um elemento que é descendente direto de outro elemento especificado (e não apenas filho desse elemento*/
+
+/*li>a {
+    text-decoration: none;
+    color: red;
+}*/
+
+/* SELETOR DE DESCENDENTE... seleciona um elemento que é descendente de outro e não apenas filho de outro*/
+
+/*li a {
+    text-decoration: none;
+    color: red;
+}
+
+p a {
+    color: green;
+}*/
+
+/*SELETOR DE IRMÃO ADJACENTE.. seleciona um elemento que é irmão proximo de outro (apenas o primeiro elemento logo apos o elemento irmão)*/
+
+/*h1+p {
+    color: red;
+}*/
+
+/*SELETOR DE IRMÃO GERAL.. seleciona todos os elemento que forem irmão do elemento definido*/
+
+h1~p {
+    color: red;
+}
