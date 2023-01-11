@@ -47,6 +47,20 @@
             document.write('False');
         }
 
+        document.write('<hr>');
+
+        document.write('<h1>Verificar se um aluno está aprovado ou reprovado!</h1>');
+
+        var nota = prompt('Digite a nota do aluno:');
+        var faltas = prompt('Digite a quantida de faltas do aluno:');
+
+        var media = 7;
+        var faltasMaximas = 15;
+
+        if (nota >= media && faltas <= faltasMaximas) {
+            document.write('<h4 style="color: green;">Aluno aprovado!</h4>');
+        } else {document.write('<h4 style="color: red;">Aluno reprovado!</h4>');}
+
     </script>
     
 </head>
