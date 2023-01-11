@@ -61,6 +61,12 @@
             document.write('<h4 style="color: green;">Aluno aprovado!</h4>');
         } else {document.write('<h4 style="color: red;">Aluno reprovado!</h4>');}
 
+        document.write('<h4>Operador ternario</h4>');
+        // Tem uma sintaxe mais facil de ler, porém é limitada
+        var resultado = nota >= media && faltas <= faltasMaximas ? 'Aprovado' : 'Reprovado';
+
+        document.write(resultado);
+
     </script>
     
 </head>
