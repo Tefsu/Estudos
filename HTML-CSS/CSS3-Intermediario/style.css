@@ -1,0 +1,41 @@
+/*
+modelo de vaica
+*/
+
+/*
+.conteudo{
+    border: 1px solid red;
+    Espaçamento interno, é somado ao tamanho total da caixa 
+    
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px; 
+    
+    
+    padding: 20px 15px 10px 5px;
+    
+    padding: 20px;
+    /* Espaçamento exteno */
+    /*
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    */
+    /*
+    margin: 20px 15px 10px, 5px; 
+    
+    margin: 20px;
+    width: 150px;
+}
+*/
+
+#noticia{
+    background-color: gray;
+    padding: 10px;
+    border: 1px solid gray;
+}
+h2{
+    margin: 0px;
+}
