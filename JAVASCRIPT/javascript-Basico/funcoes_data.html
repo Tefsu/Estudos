@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funçoes de data em javascript</title>
+
+    <script>
+
+        var data = new Date();
+
+        /*
+        document.write(data.getDate() +'/'); //retorna o dia do mes
+        document.write((data.getMonth()+1)+'/'); // retorna o mês
+        document.write(data.getFullYear()) //retorna o ano
+
+        // metodos .get recuperam dados, e os .set aplicam dados
+        */
+
+        //adicionar / remover dias
+
+        document.write(data.toString());
+        document.write('<hr>');
+        data.setDate(data.getDate() - 11); //recupera o dia atual e soma dias a data
+        document.write(data.toString());
+        document.write('<br><br><hr><br><br>');
+
+        //adicionar / remover meses
+
+        document.write(data.toString());
+        document.write('<hr>');
+        data.setMonth(data.getMonth() + 3); //recupera o mês atual e soma os meses a data
+        document.write(data.toString());
+        document.write('<br><br><hr><br><br>');
+
+        //adicionar / remover anos
+
+        document.write(data.toString());
+        document.write('<hr>');
+        data.setFullYear(data.getFullYear() + 1); //recupera o ano atual e soma o ano a data
+        document.write(data.toString());
+        document.write('<br><br><hr><br><br>');
+
+        document.write('<br><br><hr><br><br>');
+
+        document.write('<b>new Date(year,month,day,hours,minutes,seconds,ms) </b>');
+
+        // 12/01/2022
+        var data1 = new Date(2022, 0, 12);
+
+        document.write('<hr><br>')
+
+        // 10/03/2022
+        var data2 = new Date(2022, 2, 10);
+
+        document.write(data1.toString());
+        document.write('<hr>');
+        document.write(data2.toString());
+
+        document.write('<hr><br><br>')
+
+        //converter datas para algo calculavel
+
+        document.write(data1.getTime());
+        document.write('<br>');
+        document.write(data2.getTime());
+        document.write('<hr>');
+        //recupera os milissegundos em relação a 1 de janeiro de 1970
+
+        //econtrar a quantidade de milissegundos entre data1 e data2
+
+        var milissegundosEntreDatas = Math.abs(data1.getTime() - data2.getTime());
+
+        document.write(Math.abs(data1.getTime() - data2.getTime()) + '<br>');
+
+        // 1 dia tem 24h, cada hora tem 60minutos, cada mnuto tem 60 segundos, cad segundo tem 1000 milissegundos.
+        //quantos milissegundos tem em um dia?
+        var milissegundosDia = 1*24*60*60*1000;
+        document.write('1 dia tem ' + (1*24*60*60*1000) + ' milissegundos.')
+
+        document.write('<hr><br><br>')
+
+        document.write('A diferença de dias entre as datas é: ' + Math.ceil(milissegundosEntreDatas / milissegundosDia) + ' dias');
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
