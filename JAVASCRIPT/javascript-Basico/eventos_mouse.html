@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do mouse em javascript</title>
+
+    <script src="eventos.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .container div{
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <div onclick="mouseClick()" style="background: #ccc; height: 150px; width: 150px;">
+            <span>Clique aqui</span>
+        </div>
+    
+        <div ondblclick="mouseDoubleClick()" style="background: red; height: 150px; width: 150px;">
+            <span>Double click qui</span>
+        </div>
+    
+        <div onmouseover="mouseOver()" style="background: green; height: 150px; width: 150px;">
+            <span>Passe o mouse aqui</span>
+        </div>
+    
+        <div onmouseout="mouseOut()" style="background: blue; height: 150px; width: 150px;">
+            <span>Tire o mouse daqui</span>
+        </div>
+
+    </div>
+    
+</body>
+</html>

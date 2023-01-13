@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos do teclado em javascript</title>
+
+    <script src="eventos.js"></script>
+
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
+        .container div{
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <input onfocus="onFocus()" onblur="onBluer()" type="text">
+
+        <select onchange="onChange()">
+            <option>-- Selecione --</option>
+            <option value="1">primeira opção</option>
+            <option value="2">segunda opção</option>
+        </select>
+
+    
+    </div>
+    
+</body>
+</html>
