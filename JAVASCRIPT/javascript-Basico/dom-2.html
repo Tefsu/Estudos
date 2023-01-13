@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Manipulando valores</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 100%;
+        }
+
+        .conteudo-container {
+            display: block;
+            justify-content: center;
+            background: #ccc;
+            width: 50%;
+            padding: 0px 30px 30px 30px;
+            border-radius: 10px;
+        }
+
+        .conteudo-container input{
+            width: 100%;
+            border-radius: 10px;
+            outline: none;
+            border: 1px solid rgb(143, 140, 140);
+        }
+
+        .output {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .output .conteudo-output{
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .output .conteudo-output input{
+            width: 70%;
+            margin-bottom: 4px;
+            border-radius: 0px 0px 20px 0px;
+        }
+        .output .conteudo-output div{
+            width: 30%;
+            background: #5344dd;
+            border: 1px solid #171338;
+            border-radius: 20px 0px 0px 0px;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="conteudo-container">
+            <h3 style="text-align: center; color: rgb(0, 0, 0); margin: 20px;">Manipulando valores com JavaScript</h3>
+            <input 
+            type="text" 
+            placeholder="Digite um caracter aqui"
+            onkeyup="distribuirCaracter()"
+            id="entrada">
+
+            <br>
+            <hr>
+
+            <div class="output">
+                <div class="conteudo-output">
+                    <div>Letras:</div>
+                <input type="text" disabled="disabled" id="letras">
+                </div>
+                <div class="conteudo-output">
+                    <div>Números:</div>
+                <input type="text" disabled="disabled" id="numeros">
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <script src="dom.js"></script>
+
+</body>
+</html>
