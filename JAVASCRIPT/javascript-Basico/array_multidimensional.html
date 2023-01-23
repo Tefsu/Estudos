@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Multidimensionais ou Bidimensionais</title>
+
+    <script>
+        //São arrays de arrays
+        var listaCoisas = Array();
+
+        listaCoisas['frutas'] = Array('Banana', 'Maçã', 'Morango', 'Uva');      
+        /*
+        listaCoisas['frutas'][0] = 'Banana';
+        listaCoisas['frutas'][1] = 'Maçã';
+        listaCoisas['frutas'][2] = 'Morango';
+        listaCoisas['frutas'][3] = 'Uva';
+        */
+
+        listaCoisas['pessoas'] = [];
+        listaCoisas['pessoas']['a'] = 'João';
+        listaCoisas['pessoas']['b'] = 'José';
+        listaCoisas['pessoas']['c'] = 'Maria';
+
+        console.log(listaCoisas);
+        document.write(listaCoisas['frutas'][3]);
+        document.write(listaCoisas['pessoas']['b']);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Pesquisa</title>
+
+    <script>
+        var listaFrutas = Array();
+
+        listaFrutas[0] = 'Banana';
+        listaFrutas[1] = 'Maçã';
+        listaFrutas[2] = 'Morango';
+        listaFrutas[3] = 'Uva';
+        
+        var itemPesquisa = prompt('Digite o nome da fruta que deseja pesquisar');
+        var pesquisar = listaFrutas.indexOf(itemPesquisa);
+
+        if(pesquisar === -1){
+            document.write('O item não existe');
+        } else {
+            document.write('O item existe e está na posição: '+ pesquisar);
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

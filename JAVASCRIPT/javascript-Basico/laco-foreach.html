@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de repetição - pratica</title>
+    <script>
+        
+        var listaFuncionarios = ["João Silva", "Maria Santos", "Carlos Rodrigues", "Ana Oliveira", "Luis Garcia", "Marcos Costa", "Pedro Nascimento", "Rafael Silva", "Julia Castro", "Gabriel Mendes", "Lucas Gomes", "Fernanda Silva", "Bruno Costa", "Eduardo Gomes"];
+
+        //var listaConvidados = Array();
+        //listaConvidados['a'] = 'João'
+        //listaConvidados[3] = 'Maria'
+        //listaConvidados['asfs'] = 'Carlos'
+        //listaConvidados[-3] = 'Ana'
+        //listaConvidados[false] = 'Luis'
+
+        var teste = function(valor, indice) {
+            console.log(valor, indice);
+        }
+
+        listaFuncionarios.forEach(teste); //o foreach so funciona em indices sequenciais iguais ou maiores que 0
+        
+        /*
+        document.write(listaFuncionarios[6])
+
+        listaFuncionarios.forEach(function (valor, indice, array) {
+            //lógica
+            console.log('indice: ' + indice + '\nvalor: ' + valor);
+
+            if(valor == 'Pedro Nascimento') {
+                array[indice] = "Novo valor"
+            }
+        })
+
+        document.write('<br>' + listaFuncionarios[6])
+        */
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
