@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template string</title>
+
+    <script>
+
+        let nome = 'Teferson';
+
+        //console.log('Olá '  + nome);
+        console.log(`
+            Olá 
+            ${nome}
+            Bem-vindo!
+            `);
+        //utilizando backticks é possivel concatenar variaveis e string de maneira mais facil de let, e também permite a quebra de linhas
+
+        console.log(`7 + 7 = ${7 + 7}`)
+
+        //também é possivel utilizar expressões matematicas dentro dos backticks
+
+        function calcular(x, y){
+            return x * y;
+        }
+
+        console.log(`A multiplicação de 8 * 8 é: ${calcular(8, 8)}`);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis constantes</title>
+    
+
+    <script>
+        
+        //3 escopos: global, função e bloco
+
+        //var = sobre a variavel caso esteja em um escopo de bloco dentro de uma função ou global, e assim a varaivel pode ser acessada fora do escopo de bloco de onde foi definida
+
+        //let = preserva o escopo onde a variavel é criada, apresentando um erro caso a variavel seja chamada fora do escopo que foi criada
+
+        //const = declaração de varaiveis constantes, ou seja, que não sofrem alteração ao longo do programa(OBS: é uma boa pratica utilizar caracteres maiúsculos)
+
+        const ANIME = 'Dungeon ni Deai wo Motomeru no wa'
+
+        //ANIME = 'novo nome';
+        //Não é possivel alterar o valor de uma constante, isso gera um erro.
+
+        function x(){
+            const ANIME = 'Kami-tachi'
+            console.log(ANIME);
+
+            //É possivel criar uma constante com o mesmo nome em uma função, pois o escopo global não interfere no escopo da função
+        }
+        x();
+        console.log(ANIME);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

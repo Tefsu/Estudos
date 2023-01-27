@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variaveis let</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script>
+        
+        //3 escopos: global, função e bloco
+
+        //var = sobre a variavel caso esteja em um escopo de bloco dentro de uma função ou global, e assim a varaivel pode ser acessada fora do escopo de bloco de onde foi definida
+
+        /*
+        var serie = 'Super Natural';
+
+        function x() {
+            var serie = 'Vikings';
+            console.log('função: ' + serie);
+
+            if(true){
+                console.log('bloco dentro da função: ' + serie);
+            }
+
+        }
+
+        x();
+
+        if(true){
+            console.log('global: ' + serie);
+        }
+        */
+
+         //let = preserva o escopo onde a variavel é criada, apresentando um erro caso a variavel seja chamada fora do escopo que foi criada
+
+        /*
+        if(true){
+            let serie = 'Super Natural';
+            console.log(serie);
+        }
+
+        console.log(serie);
+        */ 
+
+        //Análise de contexto
+
+        var serie = 'Super Natural';
+
+        {
+            var serie = 'TWD';
+            console.log('dentro: ' + serie);
+        }
+        console.log('fora: ' + serie);
+
+        let anime = 'Naruto';
+
+        {
+            let anime = 'Kimetsu no Yaiba';
+            console.log('dentro: ' + anime);
+        }
+        console.log('fora: ' + anime);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
